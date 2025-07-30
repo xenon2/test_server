@@ -16,6 +16,12 @@ app.get('/ping', (req, res) => {
 });
 
 
+app.get('/pong', (req, res) => {
+  res.send('pong');
+  log.info(req.headers);
+});
+
+
 
 app.listen(PORT, () => {
   log.info(`MINI Server running at http://localhost:${PORT}/`);
