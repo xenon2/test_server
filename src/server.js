@@ -18,5 +18,5 @@ app.get('/ping', (req, res) => {
 
 
 app.listen(PORT, () => {
-  log.info(`Server running at http://localhost:${PORT}/`);
+  log.info(`MINI Server running at http://localhost:${PORT}/`);
 });
