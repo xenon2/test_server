@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const log = require('./logger');
 
+const PORT = 8080
+
 app.get('/', (req, res) => {
   res.send('Hello, world!');
   log.info(req.headers);
@@ -15,6 +17,6 @@ app.get('/ping', (req, res) => {
 
 
 
-app.listen(8080, () => {
-  console.log('Server running at http://localhost:8080/');
+app.listen(PORT, () => {
+  log.info(`Server running at http://localhost:${PORT}/`);
 });
