@@ -1,5 +1,8 @@
 # test_server
 
-Sample node.js app that servers somethin on port 8080.
+This is super simple node.js app only for teaching purposes.
 
-"It is not a divine intelect", TD
+Usage:
+```bash:
+npm start
+```
