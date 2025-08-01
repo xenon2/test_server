@@ -6,11 +6,23 @@ const log = require('./logger');
 const PORT = 8080
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Hello, world! Lekcje z Jakubem\n');
+  log.info(req.headers);
+});
+
+app.get('/coffe', (req, res) => {
+  res.status(418);
+  res.send('coffe');
   log.info(req.headers);
 });
 
 app.get('/ping', (req, res) => {
+  res.send('pong');
+  log.info(req.headers);
+});
+
+
+app.get('/pong', (req, res) => {
   res.send('pong');
   log.info(req.headers);
 });
